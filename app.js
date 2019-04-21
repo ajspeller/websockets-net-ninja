@@ -22,6 +22,9 @@ app.use(express.static('public'));
 // setup socket
 const io = socket(server);
 
-io.on('connection', (socket) => {
-  debug(`Socket connection successful! ${chalk.green.inverse(socket.id)}`);
+io.on('connection', (s) => {
+  debug(`Socket connection successful! ${chalk.green.inverse(s.id)}`);
+  s.on('chat', (data) => {
+    io.sockets.emit('chat', data);
+  });
 });
