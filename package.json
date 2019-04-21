@@ -1,0 +1,40 @@
+{
+  "name": "websockets-net-ninja",
+  "version": "1.0.0",
+  "description": "Websockets Tutorial using Node",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "DEBUG=app,app:* nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajspeller/websockets-net-ninja.git"
+  },
+  "keywords": [
+    "websockets",
+    "node",
+    "nodejs",
+    "express"
+  ],
+  "author": "AJ Speller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajspeller/websockets-net-ninja/issues"
+  },
+  "homepage": "https://github.com/ajspeller/websockets-net-ninja#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "nodemon": "^1.18.11"
+  }
+}
